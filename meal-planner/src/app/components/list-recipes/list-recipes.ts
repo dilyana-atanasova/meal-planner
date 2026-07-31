@@ -1,10 +1,11 @@
-import { Component, inject, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { RecipesService } from '../../services/recipes';
 import { ListElementRecipe } from '../../models/ListElementRecipe';
+import { RecipeLinkComponent } from '../recipe-link.component/recipe-link.component';
 
 @Component({
   selector: 'app-list-recipes',
-  imports: [],
+  imports: [RecipeLinkComponent],
   templateUrl: './list-recipes.html',
   styleUrl: './list-recipes.css',
 })

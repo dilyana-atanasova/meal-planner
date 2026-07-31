@@ -1,5 +1,7 @@
 <ul>
   @for (item of recipes; track $index) {
-    <li>{{ item.RecipeName }}</li>
+    <li>
+      <app-recipe-link [recipe]="item"></app-recipe-link>
+    </li>
   }
 </ul>

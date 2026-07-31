@@ -1,0 +1,6 @@
+@if (recipe) {
+  <a class="recipe-link" [href]="recipe.RecipeLink" target="_blank" rel="noopener noreferrer">
+    <img [src]="recipe.PictureUrl" [alt]="recipe.RecipeName" />
+    <span>{{ recipe.RecipeName }}</span>
+  </a>
+}
